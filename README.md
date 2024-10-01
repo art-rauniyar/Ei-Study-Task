@@ -1,4 +1,4 @@
-# Design Patterns in Java & Astronaut Daily Schedule Organizer
+# EI Stydy Task
 
 ## Exercise 1: Design Patterns in Java
 
