@@ -1,4 +1,4 @@
-# EI Stydy Task
+# EI Study Task
 
 ## Exercise 1: Design Patterns in Java
 
