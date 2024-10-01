@@ -61,8 +61,8 @@ This section outlines a console-based CRUD application that helps astronauts org
 - **Remove a Task**: Delete an existing task.
 - **View All Tasks**: Display all tasks sorted by start time.
 - **Prevent Task Overlap**: Ensure new tasks do not overlap with existing tasks.
-- **Mark Tasks as Completed** *(Optional)*: Mark tasks as completed when done.
-- **View by Priority** *(Optional)*: View tasks filtered by priority level.
+- **Mark Tasks as Completed**: Mark tasks as completed when done.
+- **View by Priority**: View tasks filtered by priority level.
 
 ### Design Patterns Used
 1. **Singleton Pattern**: 
@@ -77,32 +77,75 @@ This section outlines a console-based CRUD application that helps astronauts org
    - **Class:** `TaskConflictObserver`
    - Notifies users of conflicts when a new task overlaps with existing tasks.
 
-### Sample Inputs & Outputs
+---
 
-**Positive Case 1**  
-- **Input:** `Add Task("Morning Exercise", "07:00", "08:00", "High")`  
-- **Output:** Task added successfully. No conflicts.
+### Sample Inputs & Outputs Screenshots
 
-**Positive Case 2**  
-- **Input:** `View Tasks`  
-- **Output:**
-    ```
-    07:00 - 08:00: Morning Exercise [High]
-    ```
+**Adding a task**  
 
-**Negative Case 1**  
-- **Input:** `Add Task("Training Session", "07:30", "08:30", "Medium")`  
-- **Output:** Error: Task conflicts with "Morning Exercise".
+![Morning Exercise Task Added](ScreenShot/a.png)
 
 ---
 
-### Logging and Error Handling
-- Gracefully handles input validation errors (e.g., time format, task conflicts).
-- Implements logging for user actions and application errors.
-- Optimized for performance with minimal overhead.
+**Adding another task**  
+
+![View Morning Exercise Task](ScreenShot/b.png)
+
+---
+
+**Viewing all tasks**  
+
+![Training Session Conflict](ScreenShot/c.png)
+
+---
+
+**Removing a Task**  
+
+![Remove Non-existent Task](ScreenShot/d.png)
+
+---
+
+**Editing a Task**  
+
+![Invalid Time Format](ScreenShot/e.png)
+
+---
+
+**Adding another Task**  
+
+![Lunch Break Task Added](ScreenShot/f.png)
+
+---
+
+**Mark Task as Completed**  
+
+![View Sorted Tasks](ScreenShot/g.png)
+
+---
+
+**Adding new Task(Conflict Occured with existing task)**  
+
+![Remove Morning Exercise Task](ScreenShot/h.png)
+
+---
+
+**Adding new Task again**  
+
+![Mark Task Completed](ScreenShot/i.png)
+
+---
+
+**Adding new Task again**  
+
+![View Completed Task](ScreenShot/j.png)
+
+---
+
+**Viewing all Tasks**  
+
+![Add Overlap Task Error](ScreenShot/k.png)
 
 ---
 
 ### Conclusion
 This project effectively demonstrates the use of **Behavioral**, **Creational**, and **Structural** design patterns in real-world applications, following best practices such as **Singleton**, **Factory**, and **Observer** patterns in the **Astronaut Daily Schedule Organizer**.
-
